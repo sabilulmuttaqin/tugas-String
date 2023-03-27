@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 class searchMyString {
     private char maxChar, minChar;
     private String kata;
@@ -51,7 +53,9 @@ class searchMyString {
 
 public class tugas1 {
     public static void main(String[] args) {
-        String kalimat = "TugasSementaraMCSelamanya";
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan kalimat terlebih dahulu: ");
+        String kalimat = input.nextLine();
         searchMyString kata = new searchMyString(kalimat);
 
         System.out.println("Karakter dengan urutan terbesar: " + kata.getMaxChar());
